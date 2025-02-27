@@ -1,5 +1,5 @@
 
-import { sequelize } from '../config/database';  // Importando a instância do Sequeliz
+import { sequelize } from '../config/database';
 import { Model, DataTypes } from 'sequelize';
 
 export class RoutineJournal extends Model {
@@ -33,6 +33,6 @@ RoutineJournal.init(
   },
   {
     sequelize,
-    tableName: 'routinesJournals',
+    tableName: 'routines-journals',
   }
 );

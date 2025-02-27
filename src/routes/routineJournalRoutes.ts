@@ -4,7 +4,7 @@ import authMiddleware from '../middleware/authMiddleware';
 
 const routineJournalRouter = Router();
 
-// Rotas para o CRUD de Diário  de Rotina
+// Rotas para o CRUD de Diário de Rotina
 routineJournalRouter.post('/routines-journals', authMiddleware, routineJournalController.createRoutineJournal);
 routineJournalRouter.get('/routines-journals', authMiddleware, routineJournalController.getAllRoutineJournals);
 routineJournalRouter.get('/routines-journals/:id', authMiddleware, routineJournalController.getRoutineJournalById);
